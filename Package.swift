@@ -34,7 +34,24 @@ let package = Package(
                 "CocoaAsyncSocket",
             ]
         ),
-        
+        .library(
+            name: "JedAIKit",
+            targets: [
+                "JedAIKit",
+                "FMDB",
+                "SwiftProtobuf",
+                "ZipArchive",
+                "Bugsnag",
+            ]
+            
+        ),
+        .library(
+            name: "JedAIConfigKit",
+            targets: [
+                "JedAIConfigKit",
+            ]
+            
+        ),
     ],
     dependencies: [
         
