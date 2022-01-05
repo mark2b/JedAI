@@ -48,7 +48,6 @@ let package = Package(
         .library(
             name: "JedAIUIKit",
             targets: [
-                "JedAIKit",
                 "JedAIUIKit",
             ]
             
