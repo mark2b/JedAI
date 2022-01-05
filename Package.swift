@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "JedAI",
+            name: "JedAIAll",
             targets: [
                 "JedAIKit",
                 "JedAIPOIKit",
@@ -46,11 +46,95 @@ let package = Package(
             
         ),
         .library(
+            name: "JedAIUIKit",
+            targets: [
+                "JedAIKit",
+                "JedAIUIKit",
+            ]
+            
+        ),
+        .library(
             name: "JedAIConfigKit",
             targets: [
                 "JedAIConfigKit",
             ]
             
+        ),
+        .library(
+            name: "JedAIReportKit",
+            targets: [
+                "JedAIUIKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAIPOIKit",
+            targets: [
+                "JedAIPOIKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAIGeofenceKit",
+            targets: [
+                "JedAIGeofenceKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAIMetricsKit",
+            targets: [
+                "JedAIMetricsKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAITripKit",
+            targets: [
+                "JedAITripKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAILambdaKit",
+            targets: [
+                "JedAILambdaKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAIJEMAKit",
+            targets: [
+                "JedAIJEMAKit",
+            ]
+            
+        ),
+        .library(
+            name: "JedAITelemetryKit",
+            targets: [
+                "JedAITelemetryKit",
+                "CocoaMQTT",
+                "CocoaAsyncSocket",
+                "Starscream",
+            ]
+        ),
+        .library(
+            name: "JedAIProfileKit",
+            targets: [
+                "JedAIProfileKit",
+            ]
+        ),
+        .library(
+            name: "JedAIScheduleKit",
+            targets: [
+                "JedAIScheduleKit",
+            ]
+        ),
+        .library(
+            name: "JedAITimelineKit",
+            targets: [
+                "JedAITimelineKit",
+            ]
         ),
     ],
     dependencies: [
