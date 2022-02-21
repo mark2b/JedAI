@@ -89,6 +89,8 @@ let package = Package(
             name: "SwiftProtobuf",
             url: "https://github.com/apple/swift-protobuf.git", "1.15.0" ..< "2.0.0"
         ),
+        .package(name: "FMDB", url: "https://github.com/ccgus/fmdb", "2.7.0" ..< "2.8.0"),
+
     ],
     targets: [
         .target(
