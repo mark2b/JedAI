@@ -28,7 +28,7 @@ let package = Package(
             ]
         ),
         .library(
-            name: "JedAIBundle2",
+            name: "JedAIBundle3",
             targets: [
                 "JedAIKit",
                 "JedAIPOIKit",
