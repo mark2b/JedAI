@@ -9,25 +9,6 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "JedAIBundle",
-            targets: [
-                "JedAIKit",
-                "JedAIPOIKit",
-                "JedAIGeofenceKit",
-                "JedAIConfigKit",
-                "JedAIReportKit",
-                "JedAIMetricsKit",
-                "JedAIJEMAKit",
-                "JedAIUIKit",
-                "JedAILambdaKit",
-                "JedAITripKit",
-                "FMDB",
-                "SwiftProtobuf",
-                "ZipArchive",
-                "Bugsnag",
-            ]
-        ),
-        .library(
             name: "JedAIBundle3",
             targets: [
                 "JedAIKit",
