@@ -41,7 +41,6 @@ let package = Package(
                 "JedAILambdaKit",
                 "JedAITripKit",
                 "FMDB",
-                "SwiftProtobuf",
                 "ZipArchive",
                 "Bugsnag",
             ]
