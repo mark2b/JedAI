@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "JedAIBundle3",
+            name: "JedAIBundle",
             targets: [
                 "JedAIKit",
                 "JedAIPOIKit",
@@ -23,6 +23,8 @@ let package = Package(
                 "JedAITripKit",
                 "ZipArchive",
                 "Bugsnag",
+                "swift-protobuf-dependency",
+                "fmdb-dependency",
             ]
         ),
         .library(
@@ -83,8 +85,19 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(
+            name: "SwiftProtobuf",
+            url: "https://github.com/apple/swift-protobuf.git", "1.15.0" ..< "2.0.0"
+        ),
     ],
     targets: [
+        .target(
+            name: "swift-protobuf-dependency",
+            dependencies: ["SwiftProtobuf"]),
+        .target(
+            name: "fmdb-dependency",
+            dependencies: ["FMDB"]
+        ),
         .binaryTarget(name: "JedAIKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAIKit.xcframework.zip", checksum: "d37598cd98b119679744c5a49c8d40ed182fe0d650a1adfe9871b363dc3ae226"),
         .binaryTarget(name: "JedAIUIKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAIUIKit.xcframework.zip", checksum: "f0c3d6f1c4a075cb5cc228b3dad6080bb897b93d8cacd2e22272cc206d52ee56"),
         .binaryTarget(name: "JedAIConfigKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAIConfigKit.xcframework.zip", checksum: "48def6ef5764fb72197e473b3e003abffcf001dbbcf301dd2ad4e265839fb824"),
