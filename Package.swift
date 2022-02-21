@@ -21,7 +21,6 @@ let package = Package(
                 "JedAIUIKit",
                 "JedAILambdaKit",
                 "JedAITripKit",
-                "FMDB",
                 "ZipArchive",
                 "Bugsnag",
             ]
@@ -100,7 +99,6 @@ let package = Package(
         .binaryTarget(name: "JedAIProfileKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAIProfileKit.xcframework.zip", checksum: "b846a2da58978ccd07e873f9c7a0b479987a98b70ceced581b52d3a7b94473c0"),
         .binaryTarget(name: "JedAIScheduleKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAIScheduleKit.xcframework.zip", checksum: "41b9e24414f1e9742bc0ca87cc1d6a3ab6a4e7236091e1142eb92fa9aa52d3f0"),
         .binaryTarget(name: "JedAITimelineKit", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/JedAITimelineKit.xcframework.zip", checksum: "c49aed88028eeca99775cc38e0a895a0cf582b45a3e0c44240a5827acfcb7fa2"),
-        .binaryTarget(name: "FMDB", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/FMDB.xcframework.zip", checksum: "7d53af1452178356521af8ca51c95394bd5fe1001154f7ddb58497d1b10cbe98"),
         .binaryTarget(name: "ZipArchive", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/ZipArchive.xcframework.zip", checksum: "f2e37a2f1163bc405a08113ec68caa139b9cdf011d01eb965129a71ae0680d87"),
         .binaryTarget(name: "Bugsnag", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/Bugsnag.xcframework.zip", checksum: "6f3ea4bba8b844446d7c03f67043d981207211d051d595bd073c838876c9c1be"),
         .binaryTarget(name: "CocoaAsyncSocket", url: "https://anagog-jedai-downloads.s3.amazonaws.com/ios/spm/0.17.0/0.17.0.541/CocoaAsyncSocket.xcframework.zip", checksum: "23ffa0bb7cd4564d72a5f4581a012cb0f20c81fd95bb8f6411561d8785e9826b"),
