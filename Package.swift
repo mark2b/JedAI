@@ -38,7 +38,7 @@ let package = Package(
             name: "JedAISIMKit",
             targets: [
                 "JedAISIMKit",
-                "Swifter",
+                "Swifter-dependency",
             ]
             
         ),
@@ -60,9 +60,7 @@ let package = Package(
             name: "JedAITelemetryKit",
             targets: [
                 "JedAITelemetryKit",
-                "CocoaMQTT",
-                "CocoaAsyncSocket",
-                "Starscream",
+                "CocoaMQTT-dependency",
             ]
         ),
         .library(
