@@ -21,10 +21,10 @@ let package = Package(
                 "JedAIUIKit",
                 "JedAILambdaKit",
                 "JedAITripKit",
-                "ZipArchive",
-                "Bugsnag",
-                "swift-protobuf-dependency",
-                "fmdb-dependency",
+                "FMDB-dependency",
+                "SwiftProtobuf-dependency",
+                "ZipArchive-dependency",
+                "Bugsnag-dependency",
             ]
         ),
         .library(
